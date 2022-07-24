@@ -1,0 +1,146 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+void to_check(int l, string n){
+	int count = 1, i, j, for_output=0, ore;
+	char output[3];
+	for(int i=0;i<l;i++){
+		int z = (int)n[i];
+		if(n[i]==n[i+1]){
+			count++;
+		}else{
+				switch(z){
+					case 50:
+						if(count==1){
+							output[for_output] = 97;
+						}else if(count==2){
+							output[for_output] = 98;
+						}else if(count==3){
+							output[for_output] = 99;
+						}else if(count==4){
+							output[for_output] = 50;
+						}
+						for_output++;
+						break;
+					case 51:
+						if(count==1){
+							output[for_output] = 100;
+						}else if(count==2){
+							output[for_output] = 101;
+						}else if(count==3){
+							output[for_output] = 102;
+						}else if(count==4){
+							output[for_output] = 51;
+						}
+						for_output++;
+						break;
+						case 52:
+						if(count==1){
+							output[for_output] = 103;
+						}else if(count==2){
+							output[for_output] = 104;
+						}else if(count==3){
+							output[for_output] = 105;
+						}else if(count==4){
+							output[for_output] = 52;
+						}
+						for_output++;
+						break;
+						case 53:
+						if(count==1){
+							output[for_output] = 106;
+						}else if(count==2){
+							output[for_output] = 107;
+						}else if(count==3){
+							output[for_output] = 108;
+						}else if(count==4){
+							output[for_output] = 53;
+						}
+						for_output++;
+						break;
+						case 54:
+						if(count==1){
+							output[for_output] = 109;
+						}else if(count==2){
+							output[for_output] = 110;
+						}else if(count==3){
+							output[for_output] = 111;
+						}else if(count==4){
+							output[for_output] = 54;
+						}
+						for_output++;
+						break;
+						case 55:
+						if(count==1){
+							output[for_output] = 112;
+						}else if(count==2){
+							output[for_output] = 113;
+						}else if(count==3){
+							output[for_output] = 114;
+						}else if(count==4){
+							output[for_output] = 115;
+						}else if(count==5){
+							output[for_output] = 55;
+						}
+						for_output++;
+						break;
+						case 56:
+						if(count==1){
+							output[for_output] = 116;
+						}else if(count==2){
+							output[for_output] = 117;
+						}else if(count==3){
+							output[for_output] = 118;
+						}else if(count==4){
+							output[for_output] = 56;
+						}
+						for_output++;
+						break;
+						case 57:
+						if(count==1){
+							output[for_output] = 119;
+						}else if(count==2){
+							output[for_output] = 120;
+						}else if(count==3){
+							output[for_output] = 121;
+						}else if(count==4){
+							output[for_output] = 122;
+						}else if(count==5){
+							output[for_output] = 57;
+						}
+						for_output++;
+						break;
+						case 48:
+							output[for_output] = 48;
+								for_output++;
+								break;
+						case 49:
+							if(count==1)
+							output[for_output] = 49;
+								for_output++;
+								break;
+			}
+			count = 1;
+			
+		}
+	}
+	for(int i=0;i<4;i++){
+		cout<<output[i];
+	}
+}
+
+int main(){
+	//taking a number from the user..
+	string number;
+	char output[4];
+	int count= 0, length;
+	cout<<"enter :";
+	cin>>number;
+	length = number.length();
+	to_check(length,number);
+	
+	
+	return 0;
+}
